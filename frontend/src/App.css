@@ -1,0 +1,50 @@
+/* Premium Portfolio Styles */
+
+* {
+  scroll-behavior: smooth;
+}
+
+.App {
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cccccc;
+}
+
+/* Smooth Transitions */
+button,
+a,
+.card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus States */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: #ffffff;
+  color: #000000;
+}
